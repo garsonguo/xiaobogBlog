@@ -3,7 +3,7 @@
 * Markdown语法介绍：http://blog.csdn.net/brian512/article/details/41310269
 
 ## 任务
-本系统将详细讲解各种实现过程
+* 本系统将详细讲解各种实现过程
 
 ### 前端脚手架工具
 <ol>
