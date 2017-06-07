@@ -7,6 +7,12 @@
 
 ### 前端脚手架工具
 <ol>
-<li>1.vue脚手架工具安装参照：http://cn.vuejs.org/v2/guide/installation.html</li>
+<li>1.vue脚手架工具安装参照：http://cn.vuejs.org/v2/guide/installation.html
+<pre><code>npm install --global vue-cli</code></pre>
+<pre><code>vue init webpack my-project</code></pre>
+<pre><code>cd my-project</code></pre>
+<pre><code>npm install</code></pre>
+<pre><code>npm run dev</code></pre>
+</li>
 </ol>
 
