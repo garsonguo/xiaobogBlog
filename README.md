@@ -4,6 +4,8 @@
 
 ## 任务
 * 本系统将详细讲解各种实现过程
+* 脚手架工具详解
+* 引入elementUI
 
 ### 前端脚手架工具
 <ol>
@@ -69,3 +71,8 @@ npm run dev
 </li>
 </ol>
 
+### 引入ElementUI
+安装element-ui
+<pre><code>npm i element-ui -S
+</code></pre>
+修改src/main.js，引入ElementUI
