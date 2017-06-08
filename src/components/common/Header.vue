@@ -24,10 +24,18 @@
   }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .header{
   height: 50px;
-  background-color: #20A0FF;
+  background-color: #58B7FF;
+  .title{
+    .name{
+      color:#fff;
+    }
+    .s-name{
+      color:red;
+    }
+  }
 }
 </style>
 
