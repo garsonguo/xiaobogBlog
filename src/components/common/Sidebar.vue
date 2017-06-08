@@ -1,9 +1,7 @@
 <template>
 <div class="sidebar">
-  <el-row class="tac">
-    <el-col :span="8">
-      <el-menu default-active="1" class="el-menu-vertical-demo" theme="dark">
-        <el-menu-item index="1"><i class="el-icon-menu">导航一</i></el-menu-item>
+  <el-menu :default-active="onRoutes" class="el-menu-vertical-demo theme" unique-opened router>
+        <el-menu-item index="Hello"><i class="el-icon-menu">Home</i></el-menu-item>
         <el-submenu index="2">
           <template slot="title"><i class="el-icon-message">导航二</i></template>
           <el-menu-item-group title="分组一">
@@ -34,23 +32,31 @@
           </el-menu-item-group>
         </el-submenu>
       </el-menu>
-    </el-col>
-  </el-row>
 </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      name: 'xiaobog'
-    }
-  }
-}
+  computed:{
+      onRoutes() {
+          return this.$route.path.replace('/','');
+      }
+  }}
 </script>
 
-<style scoped>
-
+<style lang="less" scoped>
+.sidebar{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  bottom: 0;
+  background-color: #58B7FF;
+  width: 200px;
+  .theme{
+      background-color: #58B7FF;
+    }
+}
 </style>
 
 

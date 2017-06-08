@@ -26,9 +26,12 @@
 
 <style lang="less" scoped>
 .header{
+  font-size: 24px;
   height: 50px;
   background-color: #58B7FF;
   .title{
+    line-height: 50px;
+    margin-left: 20px;
     .name{
       color:#fff;
     }
