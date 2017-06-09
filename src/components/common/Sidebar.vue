@@ -1,6 +1,6 @@
 <template>
 <div class="sidebar">
-  <el-menu :default-active="onRoutes" class="el-menu-vertical-demo theme" unique-opened router>
+  <el-menu default-active="Hell0" class="el-menu-vertical-demo theme" unique-opened router>
         <el-menu-item index="Hello"><i class="el-icon-menu">Home</i></el-menu-item>
         <el-submenu index="2">
           <template slot="title"><i class="el-icon-message">导航二</i></template>
