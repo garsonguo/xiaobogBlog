@@ -8,10 +8,10 @@
       </el-col>
       <el-col :span="1">
         <el-dropdown>
-          <span class="i-size">
+          <span class="i-size el-dropdown-link">
             <el-badge :value="5"><i class="el-icon-message"></i></el-badge>
           </span>
-          <el-dropdown-menu>
+          <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>
               测试用例
             </el-dropdown-item>
@@ -21,10 +21,10 @@
       </el-col>
       <el-col :span="1">
         <el-dropdown>
-          <span class="i-size">
+          <span class="i-size el-dropdown-link">
             <el-badge :value="3"><i class="el-icon-menu"></i></el-badge>
           </span>
-          <el-dropdown-menu>
+          <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>
               测试用例
             </el-dropdown-item>
@@ -34,18 +34,18 @@
       </el-col>
       <el-col :span="1">
         <el-dropdown>
-          <span class="head-span">
+          <span class="head-span el-dropdown-link">
             <img class="head-portrait" src="../../../static/img/headp.jpg" alt="头像">
           </span>
-          <el-dropdown-menu>
+          <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>
-              <span><i class="el-icon-star-off"></i> 个人</span>
+              <i class="el-icon-star-off"></i> 个人
             </el-dropdown-item>
             <el-dropdown-item>
-              <span><i class="el-icon-setting"></i> 设置</span>
+              <i class="el-icon-setting"></i> 设置
             </el-dropdown-item>
             <el-dropdown-item>
-              <span><i class="el-icon-star-on"></i> 退出</span>
+              <i class="el-icon-star-on"></i> 退出
             </el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
