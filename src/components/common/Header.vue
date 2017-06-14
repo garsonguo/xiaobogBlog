@@ -85,7 +85,7 @@
   }
 }
 .el-badge{
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .el-dropdown>span{
   cursor: pointer;

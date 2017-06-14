@@ -1,20 +1,76 @@
 <template>
-<v-crumbs cTitle="主页"></v-crumbs>
+<div class="home-page">
+  <v-crumbs cTitle="主页"></v-crumbs>
+  <div class="fg-line">
+    <el-row :gutter="20">
+      <el-col :span="6">
+        <div class="home-item">块一</div>
+      </el-col>
+      <el-col :span="6">
+        <div class="home-item">块二</div>
+      </el-col>
+      <el-col :span="6">
+        <div class="home-item">块三</div>
+      </el-col>
+      <el-col :span="6">
+        <div class="home-item">块四</div>
+      </el-col>
+    </el-row>
+  </div>
+  <div class="fg-line">
+    <el-row :gutter="20">
+      <el-col :span="12">
+        <el-card>
+          <div class="echarts">
+            <barChart></barChart>
+          </div>
+        </el-card>
+      </el-col>
+      <el-col :span="12">
+        <el-card>
+          <div class="echarts">
+            <lineChart></lineChart>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
+  </div>
+</div>
 </template>
 
 <script>
 import vCrumbs from '../common/Crumbs.vue'
+import barChart from '../chart/bar.vue'
+import lineChart from '../chart/line'
 export default {
-  data(){
-    return {};
+  mounted(){
+
   },
   components: {
-          vCrumbs
+          vCrumbs,barChart,lineChart
         }
   }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+.home-page{
+  margin: 20px 50px;
+  .fg-line{
+    margin-bottom: 20px;
+    .home-item{
+        height: 100px;
+        background-color: #d3dce6;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .echarts{
+        height: 300px;
+        width: 100%;
+      }
+  }
+
+}
+
 </style>
 
 
