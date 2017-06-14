@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from 'components/common/Home'
-import Hello from 'components/page/Hello'
+import HomePage from 'components/page/HomePage'
 
 Vue.use(Router)
 
@@ -13,10 +13,10 @@ export default new Router({
         component: Home,
         children: [{
             path: '',
-            component: Hello
+            component: HomePage
         }, {
-            path: '/Hello',
-            component: Hello
+            path: '/HomePage',
+            component: HomePage
         }]
     }]
 })

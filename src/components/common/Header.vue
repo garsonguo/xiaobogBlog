@@ -28,7 +28,7 @@
 .header{
   font-size: 24px;
   height: 50px;
-  background-color: #58B7FF;
+  background-color: #2b3643;
   .title{
     line-height: 50px;
     margin-left: 20px;

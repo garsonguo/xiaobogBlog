@@ -1,9 +1,9 @@
 <template>
 <div class="sidebar">
-  <el-menu default-active="Hell0" class="el-menu-vertical-demo theme" unique-opened router>
-        <el-menu-item index="Hello"><i class="el-icon-menu">Home</i></el-menu-item>
+  <el-menu default-active="Hell0" class="el-menu-vertical-demo" unique-opened router theme="dark">
+        <el-menu-item index="HomePage"><i class="el-icon-menu"></i>主页</el-menu-item>
         <el-submenu index="2">
-          <template slot="title"><i class="el-icon-message">导航二</i></template>
+          <template slot="title"><i class="el-icon-message"></i>导航二</template>
           <el-menu-item-group title="分组一">
             <template slot="title">分组一</template>
             <el-menu-item index="2-1">选项1</el-menu-item>
@@ -19,7 +19,7 @@
           </el-menu-item-group>
         </el-submenu>
         <el-submenu index="3">
-          <template slot="title"><i class="el-icon-message">导航三</i></template>
+          <template slot="title"><i class="el-icon-message"></i>导航三</template>
           <el-menu-item-group title="分组一">
             <template slot="title">分组一</template>
             <el-menu-item index="3-1">选项1</el-menu-item>
@@ -51,11 +51,8 @@ export default {
   left: 0;
   top: 50px;
   bottom: 0;
-  background-color: #58B7FF;
+  background-color: #2b3643;
   width: 200px;
-  .theme{
-      background-color: #58B7FF;
-    }
 }
 </style>
 
