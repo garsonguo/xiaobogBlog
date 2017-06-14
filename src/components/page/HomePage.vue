@@ -4,16 +4,16 @@
   <div class="fg-line">
     <el-row :gutter="20">
       <el-col :span="6">
-        <div class="home-item">块一</div>
+        <div class="home-item item1">块一</div>
       </el-col>
       <el-col :span="6">
-        <div class="home-item">块二</div>
+        <div class="home-item item2">块二</div>
       </el-col>
       <el-col :span="6">
-        <div class="home-item">块三</div>
+        <div class="home-item item3">块三</div>
       </el-col>
       <el-col :span="6">
-        <div class="home-item">块四</div>
+        <div class="home-item item4">块四</div>
       </el-col>
     </el-row>
   </div>
@@ -59,9 +59,20 @@ export default {
     margin-bottom: 20px;
     .home-item{
         height: 100px;
-        background-color: #d3dce6;
         border-radius: 10px;
         padding: 10px;
+      }
+      .item1{
+        background-color: #20a0ff;
+      }
+      .item2{
+        background-color: #13cc66;
+      }
+      .item3{
+        background-color: #f7ba2a;
+      }
+      .item4{
+        background-color: #ff4949;
       }
       .echarts{
         height: 300px;
