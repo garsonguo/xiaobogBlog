@@ -1,14 +1,54 @@
 <template>
   <div class="header">
     <el-row>
-      <el-col :span="8">
+      <el-col :span="20">
         <div class="title">
-          <span class="name">Xiaobog</span><span class="s-name">Admin</span>
+          <span class="name">{{name}}</span><span class="s-name">Admin</span>
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="1">
+        <el-dropdown>
+          <span class="i-size">
+            <el-badge :value="5"><i class="el-icon-message"></i></el-badge>
+          </span>
+          <el-dropdown-menu>
+            <el-dropdown-item>
+              测试用例
+            </el-dropdown-item>
+            <el-dropdown-item>测试用例</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="1">
+        <el-dropdown>
+          <span class="i-size">
+            <el-badge :value="3"><i class="el-icon-menu"></i></el-badge>
+          </span>
+          <el-dropdown-menu>
+            <el-dropdown-item>
+              测试用例
+            </el-dropdown-item>
+            <el-dropdown-item>测试用例</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+      </el-col>
+      <el-col :span="1">
+        <el-dropdown>
+          <span class="head-span">
+            <img class="head-portrait" src="../../../static/img/headp.jpg" alt="头像">
+          </span>
+          <el-dropdown-menu>
+            <el-dropdown-item>
+              <span><i class="el-icon-star-off"></i> 个人</span>
+            </el-dropdown-item>
+            <el-dropdown-item>
+              <span><i class="el-icon-setting"></i> 设置</span>
+            </el-dropdown-item>
+            <el-dropdown-item>
+              <span><i class="el-icon-star-on"></i> 退出</span>
+            </el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
       </el-col>
     </el-row>
   </div>
@@ -39,6 +79,25 @@
       color:red;
     }
   }
+  .i-size{
+    font-size: 20px;
+    color: #fff;
+  }
+}
+.el-badge{
+  margin-top: 10px;
+}
+.el-dropdown>span{
+  cursor: pointer;
+}
+.head-portrait{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-top: 5px;
+}
+.head-span{
+  display: inline-block;
 }
 </style>
 
