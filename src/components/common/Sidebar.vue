@@ -3,11 +3,11 @@
   <el-menu default-active="Hell0" class="el-menu-vertical-demo" unique-opened router theme="dark">
         <el-menu-item index="HomePage"><i class="el-icon-menu"></i>主页</el-menu-item>
         <el-submenu index="2">
-          <template slot="title"><i class="el-icon-message"></i>导航二</template>
-          <el-menu-item-group title="分组一">
-            <template slot="title">分组一</template>
-            <el-menu-item index="2-1">选项1</el-menu-item>
-            <el-menu-item index="2-2">选项2</el-menu-item>
+          <template slot="title"><i class="el-icon-message"></i>组件</template>
+          <el-menu-item-group title="编辑器">
+            <template slot="title">编辑器</template>
+            <el-menu-item index="EditorPage">文本编辑器</el-menu-item>
+            <el-menu-item index="MarkdownPage">Markdown编辑器</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group title="分组二">
             <template slot="title">分组二</template>
