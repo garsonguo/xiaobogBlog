@@ -22,13 +22,13 @@
         <el-card>
           <el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
             <el-form-item label="姓名">
-               <el-input></el-input>
+               <el-input v-model="formLabelAlign.name"></el-input>
             </el-form-item>
             <el-form-item label="活动区域">
-               <el-input></el-input>
+               <el-input v-model="formLabelAlign.region"></el-input>
             </el-form-item>
             <el-form-item label="活动形式">
-               <el-input></el-input>
+               <el-input v-model="formLabelAlign.type"></el-input>
             </el-form-item>
           </el-form>
         </el-card>
@@ -37,13 +37,13 @@
         <el-card>
           <el-form label-width="80px" :model="formLabelAlign">
             <el-form-item label="姓名">
-               <el-input></el-input>
+               <el-input v-model="formLabelAlign.name"></el-input>
             </el-form-item>
             <el-form-item label="活动区域">
-               <el-input></el-input>
+               <el-input v-model="formLabelAlign.region"></el-input>
             </el-form-item>
             <el-form-item label="活动形式">
-               <el-input></el-input>
+               <el-input v-model="formLabelAlign.type"></el-input>
             </el-form-item>
           </el-form>
         </el-card>
