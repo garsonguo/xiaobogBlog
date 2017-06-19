@@ -12,9 +12,9 @@
           <el-menu-item-group title="表格">
             <template slot="title">表格</template>
             <el-menu-item index="BasicTable">几种表格</el-menu-item>
-            <el-submenu index="2-4">
+            <el-submenu index="2-1">
               <template slot="title">模态框</template>
-              <el-menu-item index="2-4-1">选项4-1</el-menu-item>
+              <el-menu-item index="ModalPage">模态框</el-menu-item>
             </el-submenu>
           </el-menu-item-group>
         </el-submenu>

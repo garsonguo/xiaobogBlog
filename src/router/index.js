@@ -5,6 +5,7 @@ import HomePage from 'components/page/HomePage'
 import EditorPage from 'components/page/EditorPage'
 import MarkdownPage from 'components/page/MarkdownPage'
 import BasicTable from 'components/table/BasicTable'
+import ModalPage from 'components/page/ModalPage'
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +29,9 @@ export default new Router({
         }, {
             path: '/BasicTable',
             component: BasicTable
+        }, {
+            path: '/ModalPage',
+            component: ModalPage
         }]
     }]
 })
