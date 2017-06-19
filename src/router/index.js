@@ -6,6 +6,7 @@ import EditorPage from 'components/page/EditorPage'
 import MarkdownPage from 'components/page/MarkdownPage'
 import BasicTable from 'components/table/BasicTable'
 import ModalPage from 'components/page/ModalPage'
+import FormPage from 'components/form/FormPage'
 Vue.use(Router)
 
 export default new Router({
@@ -32,6 +33,9 @@ export default new Router({
         }, {
             path: '/ModalPage',
             component: ModalPage
+        }, {
+            path: '/FormPage',
+            component: FormPage
         }]
     }]
 })
