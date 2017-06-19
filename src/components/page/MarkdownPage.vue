@@ -1,11 +1,5 @@
-<style lang="less" scoped>
-.content1{
-  margin: 10px;
-}
-</style>
-
 <template>
-  <div class="content1">
+  <div class="container">
     <v-crumbs cTitle="Markdown编辑器"></v-crumbs>
 
     <el-row :gutter="20">

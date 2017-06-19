@@ -9,9 +9,9 @@
             <el-menu-item index="EditorPage">文本编辑器</el-menu-item>
             <el-menu-item index="MarkdownPage">Markdown编辑器</el-menu-item>
           </el-menu-item-group>
-          <el-menu-item-group title="分组二">
-            <template slot="title">分组二</template>
-            <el-menu-item index="2-3">选项3</el-menu-item>
+          <el-menu-item-group title="表格">
+            <template slot="title">表格</template>
+            <el-menu-item index="BasicTable">基础表格</el-menu-item>
             <el-submenu index="2-4">
               <template slot="title">选项4</template>
               <el-menu-item index="2-4-1">选项4-1</el-menu-item>

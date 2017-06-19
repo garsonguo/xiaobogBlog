@@ -1,18 +1,18 @@
 <template>
-<div>
-<v-crumbs cTitle="文本编辑器"></v-crumbs>
+  <div class="container">
+    <v-crumbs cTitle="文本编辑器"></v-crumbs>
 
-<el-alert title="所有编辑器插件：vue-quill-editor" type="success" :closable="false"></el-alert>
+    <el-alert title="所有编辑器插件：vue-quill-editor" type="success" :closable="false"></el-alert>
 
-<quill-editor ref="myTextEditor"
-              v-model="note.content"
-              :config="editorOption"
-              @blur="onEditorBlur($event)"
-              @focus="onEditorFocus($event)"
-              @ready="onEditorReady($event)">
+    <quill-editor ref="myTextEditor"
+                  v-model="note.content"
+                  :config="editorOption"
+                  @blur="onEditorBlur($event)"
+                  @focus="onEditorFocus($event)"
+                  @ready="onEditorReady($event)">
 
-</quill-editor>
-</div>
+    </quill-editor>
+  </div>
 </template>
 
 <script>

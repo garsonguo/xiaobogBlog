@@ -4,6 +4,7 @@ import Home from 'components/common/Home'
 import HomePage from 'components/page/HomePage'
 import EditorPage from 'components/page/EditorPage'
 import MarkdownPage from 'components/page/MarkdownPage'
+import BasicTable from 'components/table/BasicTable'
 Vue.use(Router)
 
 export default new Router({
@@ -24,6 +25,9 @@ export default new Router({
         }, {
             path: '/MarkdownPage',
             component: MarkdownPage
+        }, {
+            path: '/BasicTable',
+            component: BasicTable
         }]
     }]
 })
