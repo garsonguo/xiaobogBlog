@@ -10,7 +10,7 @@
             <el-menu-item index="MarkdownPage">Markdown编辑器</el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group title="表格">
-            <template slot="title">表格</template>
+            <template slot="title">表格与模态框</template>
             <el-menu-item index="BasicTable">几种表格</el-menu-item>
             <el-submenu index="2-1">
               <template slot="title">模态框</template>
