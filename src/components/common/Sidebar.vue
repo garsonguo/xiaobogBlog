@@ -13,14 +13,14 @@
             <template slot="title">表格</template>
             <el-menu-item index="BasicTable">几种表格</el-menu-item>
             <el-submenu index="2-4">
-              <template slot="title">选项4</template>
+              <template slot="title">模态框</template>
               <el-menu-item index="2-4-1">选项4-1</el-menu-item>
             </el-submenu>
           </el-menu-item-group>
         </el-submenu>
         <el-submenu index="3">
-          <template slot="title"><i class="el-icon-message"></i>导航三</template>
-          <el-menu-item-group title="分组一">
+          <template slot="title"><i class="el-icon-message"></i>表单</template>
+          <el-menu-item-group title="表单">
             <template slot="title">分组一</template>
             <el-menu-item index="3-1">选项1</el-menu-item>
             <el-menu-item index="3-2">选项2</el-menu-item>
