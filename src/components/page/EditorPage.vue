@@ -2,6 +2,8 @@
 <div>
 <v-crumbs cTitle="文本编辑器"></v-crumbs>
 
+<el-alert title="所有编辑器插件：vue-quill-editor" type="success" :closable="false"></el-alert>
+
 <quill-editor ref="myTextEditor"
               v-model="note.content"
               :config="editorOption"
