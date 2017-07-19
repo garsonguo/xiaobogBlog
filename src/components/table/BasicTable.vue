@@ -43,6 +43,7 @@
 </template>
 
 <script>
+import { fetchList } from 'api/tableAPI';
 import vCrumbs from '../common/Crumbs.vue'
 export default {
   components:{
@@ -51,64 +52,34 @@ export default {
   data(){
     return{
       currentPage1:1,
-      dataTable:[{
-          date:'2017-06-19',
-          name:'叶子',
-          address:'武汉市洪山区光谷软件园'
-        },
-        {
-          date:'2017-06-19',
-          name:'叶子',
-          address:'武汉市洪山区光谷软件园'
-        },
-        {
-          date:'2017-06-19',
-          name:'叶子',
-          address:'武汉市洪山区光谷软件园'
-        },
-        {
-          date:'2017-06-19',
-          name:'叶子',
-          address:'武汉市洪山区光谷软件园'
-        }],
-        tableData: [{
-          date: '2016-05-03',
-          name: '王小虎',
-          province: '上海',
-          city: '普陀区',
-          address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
-        }, {
-          date: '2016-05-02',
-          name: '王小虎',
-          province: '上海',
-          city: '普陀区',
-          address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          province: '上海',
-          city: '普陀区',
-          address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
-        }, {
-          date: '2016-05-01',
-          name: '王小虎',
-          province: '上海',
-          city: '普陀区',
-          address: '上海市普陀区金沙江路 1518 弄',
-          zip: 200333
-        }]
+      listQuery: {
+            page: 1,
+            limit: 10
+          },
+      dataTable:[]
     }
   },
+  created () {
+    this.getList();
+  },
   methods:{
+    getList(){
+      fetchList(this.listQuery).then(response => {
+            this.dataTable = response.data.items;
+          })
+    },
     tableRowClassName(row, index) {
         if (index === 1) {
           return 'info-row';
         } else if (index === 3) {
           return 'positive-row';
         }
+        return '';
+      },
+      handleSizeChange(){
+        return '';
+      },
+      handleCurrentChange(){
         return '';
       }
   }
