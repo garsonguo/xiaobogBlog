@@ -1,9 +1,8 @@
 import fetch from 'utils/fetch'
 
-export function fetchList(query) {
+export function fetchList() {
     return fetch({
-        url: '/table/basicList',
-        method: 'get',
-        params: query
+        url: 'http://xiaobog/table/list',
+        method: 'get'
     });
 }

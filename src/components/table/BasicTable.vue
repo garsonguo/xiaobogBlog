@@ -64,7 +64,7 @@ export default {
   },
   methods:{
     getList(){
-      fetchList(this.listQuery).then(response => {
+      fetchList().then(response => {
             this.dataTable = response.data.items;
           })
     },

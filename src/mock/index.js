@@ -1,7 +1,7 @@
 import Mock from 'mockjs'
-import tableAPI from './table';
+import table from './table';
 
 
-Mock.mock("/\/table\/basicList/", 'get', tableAPI.getTableList);
+Mock.mock("http://xiaobog/table/list", 'get', table.getTableList);
 
 export default Mock;

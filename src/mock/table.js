@@ -7,15 +7,15 @@ for (var i = 0; i < count; i++) {
     list.push(Mock.mock({
         date: +Mock.Random.date('T'),
         name: '@cname',
-        address: '@caddress'
+        address: '@address'
     }));
 }
 
 export default {
-    getTableList: config => {
-        let pageList = list.filter((item, index) => index < 10);
+    getTableList: () => {
+        let pageList = list.filter((item, index) => index > 10);
         return {
-            total: count,
+            total: 200,
             items: pageList
         }
     }
