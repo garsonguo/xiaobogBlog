@@ -5,6 +5,8 @@ import HomePage from 'components/page/HomePage'
 import EditorPage from 'components/page/EditorPage'
 import MarkdownPage from 'components/page/MarkdownPage'
 import BasicTable from 'components/table/BasicTable'
+import FixedTable from 'components/table/FixedTable'
+import DynamicTable from 'components/table/DynamicTable'
 import ModalPage from 'components/page/ModalPage'
 import FormPage from 'components/form/FormPage'
 Vue.use(Router)
@@ -30,6 +32,12 @@ export default new Router({
         }, {
             path: '/BasicTable',
             component: BasicTable
+        }, {
+            path: '/FixedTable',
+            component: FixedTable
+        }, {
+            path: '/DynamicTable',
+            component: DynamicTable
         }, {
             path: '/ModalPage',
             component: ModalPage

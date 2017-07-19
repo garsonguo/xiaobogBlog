@@ -22,6 +22,15 @@
           <template slot="title"><i class="el-icon-message"></i>表单</template>
           <el-menu-item index="FormPage">表单</el-menu-item>
         </el-submenu>
+        <el-submenu index="4">
+          <template slot="title"><i class="el-icon-message"></i>Table</template>
+          <el-menu-item index="BasicTable">基础表格</el-menu-item>
+          <el-menu-item index="FixedTable">固定表头、列</el-menu-item>
+          <el-menu-item index="DynamicTable">动态表格</el-menu-item>
+          <el-menu-item index="BasicTable">排序</el-menu-item>
+          <el-menu-item index="BasicTable">筛选</el-menu-item>
+          <el-menu-item index="BasicTable">合计</el-menu-item>
+        </el-submenu>
       </el-menu>
 </div>
 </template>

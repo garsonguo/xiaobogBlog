@@ -14,7 +14,7 @@ export default {
 
 <style lang="less" scoped>
 .bread-crumb{
-  margin: 10px;
+  margin: 20px 10px;
   span{
     font-size:18px;
   }
