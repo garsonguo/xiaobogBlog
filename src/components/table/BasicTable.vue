@@ -12,7 +12,7 @@
         <el-pagination
           @size-change="handleSizeChange"
           @current-change="handleCurrentChange"
-          :current-page.sync="currentPage1"
+          :current-page.sync="currentPage"
           :page-size="4"
           layout="total, prev, pager, next"
           :total="20">
@@ -51,7 +51,7 @@ export default {
   },
   data(){
     return{
-      currentPage1:1,
+      currentPage:1,
       listQuery: {
             page: 1,
             limit: 10
@@ -64,7 +64,7 @@ export default {
   },
   methods:{
     getList(){
-      fetchList().then(response => {
+      fetchList(this.listQuery).then(response => {
             this.dataTable = response.data.items;
           })
     },
