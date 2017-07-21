@@ -9,14 +9,7 @@
             <el-menu-item index="EditorPage">文本编辑器</el-menu-item>
             <el-menu-item index="MarkdownPage">Markdown编辑器</el-menu-item>
           </el-menu-item-group>
-          <el-menu-item-group title="表格">
-            <template slot="title">表格与模态框</template>
-            <el-menu-item index="BasicTable">几种表格</el-menu-item>
-            <el-submenu index="2-1">
-              <template slot="title">模态框</template>
-              <el-menu-item index="ModalPage">模态框</el-menu-item>
-            </el-submenu>
-          </el-menu-item-group>
+          <el-menu-item index="ModalPage">模态框</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title"><i class="el-icon-message"></i>表单</template>
@@ -30,6 +23,15 @@
           <el-menu-item index="BasicTable">排序</el-menu-item>
           <el-menu-item index="BasicTable">筛选</el-menu-item>
           <el-menu-item index="BasicTable">合计</el-menu-item>
+        </el-submenu>
+        <el-submenu index="5">
+          <template slot="title"><i class="el-icon-message"></i>错误页面</template>
+          <el-menu-item index="">401</el-menu-item>
+          <el-menu-item index="">404</el-menu-item>
+        </el-submenu>
+        <el-submenu index="6">
+          <template slot="title"><i class="el-icon-message"></i>综合实例</template>
+          <el-menu-item index="">增删改查</el-menu-item>
         </el-submenu>
       </el-menu>
 </div>

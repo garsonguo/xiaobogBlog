@@ -3,17 +3,23 @@
   <v-crumbs cTitle="主页"></v-crumbs>
   <div class="fg-line">
     <el-row :gutter="20">
-      <el-col :span="6">
-        <div class="home-item item1">块一</div>
+      <el-col :span="4">
+        <router-link class="pan-btn blue-btn" to="/HomePage">主页</router-link>
       </el-col>
-      <el-col :span="6">
-        <div class="home-item item2">块二</div>
+      <el-col :span="4">
+        <router-link class="pan-btn light-blue-btn" to="/HomePage">组件</router-link>
       </el-col>
-      <el-col :span="6">
-        <div class="home-item item3">块三</div>
+      <el-col :span="4">
+        <router-link class="pan-btn pink-btn" to="/FormPage">表单</router-link>
       </el-col>
-      <el-col :span="6">
-        <div class="home-item item4">块四</div>
+      <el-col :span="4">
+        <router-link class="pan-btn green-btn" to="/BasicTable">表格</router-link>
+      </el-col>
+      <el-col :span="4">
+        <router-link class="pan-btn tiffany-btn" to="/BasicTable">错误页面</router-link>
+      </el-col>
+      <el-col :span="4">
+        <router-link class="pan-btn yellow-btn" to="/BasicTable">综合实例</router-link>
       </el-col>
     </el-row>
   </div>
