@@ -38,7 +38,8 @@ module.exports = {
             'vue$': 'vue/dist/vue.esm.js',
             '@': resolve('src'),
             'assets': resolve('src/assets'),
-            'components': resolve('src/components')
+            'components': resolve('src/components'),
+            'static':resolve('static')
         }
     },
     // 配置不同类型模块的处理规则
