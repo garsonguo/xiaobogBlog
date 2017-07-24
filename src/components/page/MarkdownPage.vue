@@ -3,13 +3,7 @@
     <v-crumbs cTitle="Markdown编辑器"></v-crumbs>
 
     <el-row :gutter="20">
-      <el-col>
-        <el-alert title="所有编辑器插件：vue-simplemde" type="success" :closable="false"></el-alert>
-      </el-col>
-      <el-col :span="12">
-        <markdown-editor v-model="source" ref="markdownEditor"></markdown-editor>
-      </el-col>
-      <el-col :span="12">
+      <el-col style="margin-bottom:20px;" :span="24">
         <el-card>
           <vue-markdown class="result-html full-height" :watches="['show','html','breaks','linkify','emoji','typographer','toc']"
                     :source="source" :show="show" :html="html" :breaks="breaks" :linkify="linkify"
@@ -17,6 +11,11 @@
                     toc-id="toc"></vue-markdown>
         </el-card>
       </el-col>
+
+      <el-col :span="24">
+        <markdown-editor v-model="source" ref="markdownEditor"></markdown-editor>
+      </el-col>
+      
     </el-row>
   </div>
 </template>

@@ -12,6 +12,11 @@ import 'nprogress/nprogress.css'; // Progress 进度条 样式
 
 import './mock/index.js'; // 该项目所有请求使用mockjs模拟
 
+import '../static/utf8-php/ueditor.config.js'
+import '../static/utf8-php/ueditor.all.min.js'
+import '../static/utf8-php/lang/zh-cn/zh-cn.js'
+import '../static/utf8-php/ueditor.parse.min.js'
+
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 

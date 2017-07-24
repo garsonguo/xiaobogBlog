@@ -68,7 +68,7 @@
 .header{
   font-size: 24px;
   height: 50px;
-  background-color: #2b3643;
+  background-color: #3A71A8;
   .title{
     line-height: 50px;
     margin-left: 20px;
