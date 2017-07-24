@@ -21,9 +21,7 @@
           <el-menu-item index="BasicTable">基础表格</el-menu-item>
           <el-menu-item index="FixedTable">固定表头、列</el-menu-item>
           <el-menu-item index="DynamicTable">动态表格</el-menu-item>
-          <el-menu-item index="BasicTable">排序</el-menu-item>
-          <el-menu-item index="BasicTable">筛选</el-menu-item>
-          <el-menu-item index="BasicTable">合计</el-menu-item>
+          <el-menu-item index="SortFilter">排序与筛选</el-menu-item>
         </el-submenu>
         <el-submenu index="5">
           <template slot="title"><i class="el-icon-circle-cross"></i>错误页面</template>

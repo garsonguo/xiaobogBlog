@@ -7,6 +7,7 @@ import MarkdownPage from 'components/page/MarkdownPage'
 import BasicTable from 'components/table/BasicTable'
 import FixedTable from 'components/table/FixedTable'
 import DynamicTable from 'components/table/DynamicTable'
+import SortFilter from 'components/table/SortFilter'
 import ModalPage from 'components/page/ModalPage'
 import FormPage from 'components/form/FormPage'
 Vue.use(Router)
@@ -38,6 +39,9 @@ export default new Router({
         }, {
             path: '/DynamicTable',
             component: DynamicTable
+        }, {
+            path: '/SortFilter',
+            component: SortFilter
         }, {
             path: '/ModalPage',
             component: ModalPage
