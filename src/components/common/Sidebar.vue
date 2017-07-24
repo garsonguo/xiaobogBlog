@@ -4,7 +4,7 @@
     <el-radio-button :label="false">展开</el-radio-button>
     <el-radio-button :label="true">收起</el-radio-button>
   </el-radio-group> -->
-  <el-menu default-active="HomePage" class="el-menu-vertical-demo" theme="dark" unique-opened router @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+  <el-menu :default-active="onRoutes" class="el-menu-vertical-demo" theme="dark" unique-opened router @open="handleOpen" @close="handleClose" :collapse="isCollapse">
         <el-menu-item index="HomePage"><i class="el-icon-menu"></i>主页</el-menu-item>
         <el-submenu index="2">
           <template slot="title"><i class="el-icon-star-on"></i>组件</template>
@@ -54,6 +54,8 @@ export default {
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
+        debugger
+        var aa=this.$route.path
       }
   }
   }

@@ -29,40 +29,52 @@ export default new Router({
             component: Home,
             children: [{
                 path: '',
-                component: HomePage
+                component: HomePage,
+                name: '主页'
             }, {
                 path: '/HomePage',
-                component: HomePage
+                component: HomePage,
+                name: '主页'
             }, {
                 path: '/EditorPage',
-                component: EditorPage
+                component: EditorPage,
+                name: '文本编辑器'
             }, {
                 path: '/MarkdownPage',
-                component: MarkdownPage
+                component: MarkdownPage,
+                name: 'Markdown编辑器'
             }, {
                 path: '/BasicTable',
-                component: BasicTable
+                component: BasicTable,
+                name: '基础表格'
             }, {
                 path: '/FixedTable',
-                component: FixedTable
+                component: FixedTable,
+                name: '固定表头、列'
             }, {
                 path: '/DynamicTable',
-                component: DynamicTable
+                component: DynamicTable,
+                name: '动态表格'
             }, {
                 path: '/SortFilter',
-                component: SortFilter
+                component: SortFilter,
+                name: '排序与筛选'
             }, {
                 path: '/ModalPage',
-                component: ModalPage
+                component: ModalPage,
+                name: '模态框'
             }, {
                 path: '/FormPage',
-                component: FormPage
+                component: FormPage,
+                name: '表单'
             }, {
                 path: '/TypicalForm',
-                component: TypicalForm
+                component: TypicalForm,
+                name: '典型表单'
             }, {
                 path: '/NotFound',
-                component: NotFound
+                component: NotFound,
+                name: '404'
             }]
         }
     ]
