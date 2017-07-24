@@ -30,7 +30,7 @@
         </el-submenu>
         <el-submenu index="6">
           <template slot="title"><i class="el-icon-date"></i>综合实例</template>
-          <el-menu-item index="">增删改查</el-menu-item>
+          <el-menu-item index="Comprehensive">增删改查</el-menu-item>
         </el-submenu>
       </el-menu>
 </div>

@@ -13,6 +13,7 @@ import ModalPage from 'components/page/ModalPage'
 import FormPage from 'components/form/FormPage'
 import TypicalForm from 'components/form/TypicalForm'
 import NotFound from 'components/page/NotFound'
+import Comprehensive from 'components/page/Comprehensive'
 Vue.use(Router)
 
 export default new Router({
@@ -75,6 +76,10 @@ export default new Router({
                 path: '/NotFound',
                 component: NotFound,
                 name: '404'
+            }, {
+                path: '/Comprehensive',
+                component: Comprehensive,
+                name: '增删改查'
             }]
         }
     ]
