@@ -20,6 +20,8 @@
     <el-row :gutter="20">
       <el-col :span="8">
         <el-card>
+          Label->左对齐
+          <hr class='line'>
           <el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
             <el-form-item label="姓名">
                <el-input v-model="formLabelAlign.name"></el-input>
@@ -30,11 +32,16 @@
             <el-form-item label="活动形式">
                <el-input v-model="formLabelAlign.type"></el-input>
             </el-form-item>
+            <el-form-item label="活动类型">
+               <el-input v-model="formLabelAlign.type1"></el-input>
+            </el-form-item>
           </el-form>
         </el-card>
       </el-col>
       <el-col :span="8">
         <el-card>
+          Label->右对齐
+          <hr class='line'>
           <el-form label-width="80px" :model="formLabelAlign">
             <el-form-item label="姓名">
                <el-input v-model="formLabelAlign.name"></el-input>
@@ -45,11 +52,16 @@
             <el-form-item label="活动形式">
                <el-input v-model="formLabelAlign.type"></el-input>
             </el-form-item>
+            <el-form-item label="活动类型">
+               <el-input v-model="formLabelAlign.type1"></el-input>
+            </el-form-item>
           </el-form>
         </el-card>
       </el-col>
       <el-col :span="8">
         <el-card>
+          Label->上对齐
+          <hr class='line'>
           <el-form :label-position="labelPosition1" label-width="80px" :model="formLabelAlign">
             <el-form-item label="姓名">
                <el-input v-model="formLabelAlign.name"></el-input>
@@ -84,7 +96,8 @@ export default {
       formLabelAlign: {
           name: '',
           region: '',
-          type: ''
+          type: '',
+          type1:''
         }
     }
   }

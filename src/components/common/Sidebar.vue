@@ -14,6 +14,7 @@
         </el-submenu>
         <el-submenu index="3">
           <template slot="title"><i class="el-icon-message"></i>表单</template>
+          <el-menu-item index="TypicalForm">典型表单</el-menu-item>
           <el-menu-item index="FormPage">表单</el-menu-item>
         </el-submenu>
         <el-submenu index="4">

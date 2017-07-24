@@ -68,12 +68,12 @@
               <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
               <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
             </el-collapse-item>
-            
+
           </el-collapse>
         </el-card>
       </el-col>
       <el-col style="margin-top:20px;" :span="12">
-        
+
         <el-card class="box-card">
           基本表格
           <hr class='line'>
@@ -85,7 +85,7 @@
         </el-card>
       </el-col>
       <el-col style="margin-top:20px;" :span="6">
-        
+
         <el-card class="box-card">
           Tab标签页
         <hr class='line'>
@@ -204,13 +204,6 @@ export default {
         width: 100%;
       }
   }
-  .line{
-    height: 1px;
-    margin: 10px 0;
-    border: 0;
-    border-top:1px dashed #ddd;
-  }
-
 }
 
 </style>

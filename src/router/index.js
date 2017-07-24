@@ -10,6 +10,7 @@ import DynamicTable from 'components/table/DynamicTable'
 import SortFilter from 'components/table/SortFilter'
 import ModalPage from 'components/page/ModalPage'
 import FormPage from 'components/form/FormPage'
+import TypicalForm from 'components/form/TypicalForm'
 Vue.use(Router)
 
 export default new Router({
@@ -48,6 +49,9 @@ export default new Router({
         }, {
             path: '/FormPage',
             component: FormPage
+        }, {
+            path: '/TypicalForm',
+            component: TypicalForm
         }]
     }]
 })
