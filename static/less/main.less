@@ -30,14 +30,6 @@
   display: inline-block;
   text-decoration: none;
 }
-.pan-btn:hover{
-  background: #fff;
-}
-.pan-btn:hover:before,
-.pan-btn:hover:after {
-      width: 100%;
-      transition: 600ms ease all;
-    }
 .pan-btn:before,
 .pan-btn:after{
     content: '';
@@ -48,6 +40,15 @@
     width: 0;
     transition: 400ms ease all;
 }
+.pan-btn:hover{
+  background: #fff;
+}
+.pan-btn:hover:before,
+.pan-btn:hover:after {
+      width: 100%;
+      transition: 600ms ease all;
+    }
+
 .pan-btn::after {
     right: inherit;
     top: inherit;
