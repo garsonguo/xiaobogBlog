@@ -92,7 +92,7 @@
           <el-tabs  v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="放假行程" name="first">
               <el-steps :space="100" direction="vertical" :active="1">
-                <el-step title="第一天" description='长线游：黄鹤楼+户部巷+江滩等'></el-step>
+                <el-step title="第一天" description='长线游：黄鹤楼+户部巷等'></el-step>
                 <el-step title="第二天" description='短线游：汉街逛吃逛吃'></el-step>
                 <el-step title="第三天" description='无聊游：随便走走'></el-step>
               </el-steps>
