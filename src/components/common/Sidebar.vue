@@ -26,8 +26,7 @@
         </el-submenu>
         <el-submenu index="5">
           <template slot="title"><i class="el-icon-circle-cross"></i>错误页面</template>
-          <el-menu-item index="">401</el-menu-item>
-          <el-menu-item index="">404</el-menu-item>
+          <el-menu-item index="NotFound">404</el-menu-item>
         </el-submenu>
         <el-submenu index="6">
           <template slot="title"><i class="el-icon-date"></i>综合实例</template>

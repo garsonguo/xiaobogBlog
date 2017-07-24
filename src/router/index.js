@@ -12,6 +12,7 @@ import SortFilter from 'components/table/SortFilter'
 import ModalPage from 'components/page/ModalPage'
 import FormPage from 'components/form/FormPage'
 import TypicalForm from 'components/form/TypicalForm'
+import NotFound from 'components/page/NotFound'
 Vue.use(Router)
 
 export default new Router({
@@ -59,6 +60,9 @@ export default new Router({
             }, {
                 path: '/TypicalForm',
                 component: TypicalForm
+            }, {
+                path: '/NotFound',
+                component: NotFound
             }]
         }
     ]
