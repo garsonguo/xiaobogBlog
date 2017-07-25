@@ -14,6 +14,7 @@ import FormPage from 'components/form/FormPage'
 import TypicalForm from 'components/form/TypicalForm'
 import NotFound from 'components/page/NotFound'
 import Comprehensive from 'components/page/Comprehensive'
+import Upload from 'components/page/Upload'
 Vue.use(Router)
 
 export default new Router({
@@ -79,6 +80,10 @@ export default new Router({
             }, {
                 path: '/Comprehensive',
                 component: Comprehensive,
+                name: '增删改查'
+            }, {
+                path: '/Upload',
+                component: Upload,
                 name: '增删改查'
             }]
         }

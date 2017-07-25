@@ -16,6 +16,7 @@
       <template slot="title"><i class="el-icon-message"></i>表单</template>
       <el-menu-item index="TypicalForm">典型表单</el-menu-item>
       <el-menu-item index="FormPage">表单</el-menu-item>
+      <el-menu-item index="Upload">上传</el-menu-item>
     </el-submenu>
     <el-submenu index="4">
       <template slot="title"><i class="el-icon-document"></i>Table</template>
