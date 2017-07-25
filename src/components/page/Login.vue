@@ -5,8 +5,8 @@
         <el-card>
           <el-form :model="loginForm" :rules="rules" ref="loginForm">
             <h3 class="login-title">系统登录</h3>
-            <el-form-item prop="name">
-              <el-input type="text" v-model="loginForm.name" placeholder="请输入账号"></el-input>
+            <el-form-item prop="username">
+              <el-input type="text" v-model="loginForm.username" placeholder="请输入账号"></el-input>
             </el-form-item>
             <el-form-item prop="password">
               <el-input type="password" v-model="loginForm.password" placeholder="请输入密码"></el-input>
@@ -25,17 +25,18 @@
 </template>
 
 <script>
+import {requestLogin} from '../../api/indexAPI'
 export default {
   data(){
     return{
       logining:false,
       loginForm:{
-        name:"",
-        password:""
+        username:"xiaobog",
+        password:"123456"
       },
       checked:true,
       rules:{
-        name:[{required:true,message:'请输入账号',trigger:'blur'}],
+        username:[{required:true,message:'请输入账号',trigger:'blur'}],
         password:[{required:true,message:'请输入密码',trigger:'blur'}]
       }
     }
@@ -45,7 +46,20 @@ export default {
       this.$refs.loginForm.validate((valid)=>{
         if(valid){
           this.logining = true;
-          this.$router.push({ path: '/HomePage' });
+          var loginParams = { username: this.loginForm.username, password: this.loginForm.password };
+          requestLogin(loginParams).then(data=>{
+            this.logining=false;
+            let { msg, code, user } = data;
+            if(code!=200){
+              this.$message({
+                  message: msg,
+                  type: 'error'
+                });
+            }else{
+              sessionStorage.setItem('user', JSON.stringify(user));
+              this.$router.push({ path: '/HomePage' });
+            }
+          });
         }else{
           this.$message({
             message:'登录失败！',
