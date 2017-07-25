@@ -50,6 +50,7 @@ export default {
           requestLogin(loginParams).then(data=>{
             this.logining=false;
             let { msg, code, user } = data;
+            debugger
             if(code!=200){
               this.$message({
                   message: msg,
