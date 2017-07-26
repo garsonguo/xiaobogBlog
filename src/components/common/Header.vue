@@ -45,7 +45,7 @@
               <i class="el-icon-setting"></i> 设置
             </el-dropdown-item>
             <el-dropdown-item>
-              <i class="el-icon-star-on"></i> 退出
+              <i class="el-icon-star-on"></i> <span @click="loginOut">退出</span>
             </el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
@@ -59,6 +59,19 @@
     data() {
       return {
         name: 'xiaobog'
+      }
+    },
+    methods:{
+      loginOut(){
+        this.$confirm('您确定要退出吗？','提示',{
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(()=>{
+          sessionStorage.clear('user');
+          this.$router.push('/login');
+        });
+
       }
     }
   }
