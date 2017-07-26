@@ -23,16 +23,18 @@ export default new Router({
     routes: [{
             path: '/login',
             component: Login,
-            name: '',
-            hidden: true
+            name: '登录'
         },
         {
-            path: '/',
+            path: '',
             component: Home,
             children: [{
-                path: '',
+                path: '/',
                 component: HomePage,
-                name: '主页'
+                name: '主页',
+                meta: {
+                    requireAuth: true,
+                },
             }, {
                 path: '/HomePage',
                 component: HomePage,
