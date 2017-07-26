@@ -3,6 +3,7 @@ import { Loading, Message } from 'element-ui';
 
 // 创建axios实例
 const service = axios.create({
+    baseURL: 'https://xiaobog',
     timeout: 5000 // 请求超时时间
 });
 var loadinginstace;

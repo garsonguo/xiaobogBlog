@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import {requestLogin} from '../../api/indexAPI'
+import {fetchLogin} from '../../api/loginAPI'
 export default {
   data(){
     return{
@@ -47,9 +47,9 @@ export default {
         if(valid){
           this.logining = true;
           var loginParams = { username: this.loginForm.username, password: this.loginForm.password };
-          requestLogin(loginParams).then(data=>{
+          fetchLogin(loginParams).then(data=>{
             this.logining=false;
-            let { msg, code, user } = data;
+            let { msg, code, user } = data.data;
             if(code!=200){
               this.$message({
                   message: msg,

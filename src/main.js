@@ -23,6 +23,14 @@ Vue.config.productionTip = false
 router.beforeEach((to, from, next) => {
     NProgress.start(); // 开启Progress
     next();
+    // var userSession = sessionStorage.getItem('user');
+    // debugger
+    // if (userSession) {
+    //     next();
+    // } else {
+    //     next({ path: '/login' });
+    // }
+
 });
 router.afterEach(() => {
     NProgress.done(); // 结束Progress

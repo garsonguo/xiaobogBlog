@@ -1,8 +1,10 @@
 import fetch from 'utils/fetch'
 
-export function fetchList(query) {
+export function fetchLogin(query) {
+    const data = query;
     return fetch({
-        url: 'http://xiaobog/login/list',
-        method: 'get'
+        url: '/login',
+        method: 'post',
+        data
     });
 }
