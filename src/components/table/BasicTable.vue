@@ -3,7 +3,7 @@
     <v-crumbs cTitle="基础表格"></v-crumbs>
     <el-row :gutter="20">
       <el-col :span="4" :offset="20" style="text-align:right;">
-        <el-button style="margin-bottom:10px;" type="primary" icon="document" @click="excelDownload">导出Excel</el-button>
+        <el-button style="margin-bottom:10px;" type="primary" icon="document" @click="excelDownload" :loading="logining">导出Excel</el-button>
       </el-col>
       <el-col :span="24">
         <el-table border :data="dataTable" style="width:100%;">
@@ -59,7 +59,8 @@ export default {
             page: 1,
             limit: 10
           },
-      dataTable:[]
+      dataTable:[],
+      logining:false
     }
   },
   created () {
@@ -72,6 +73,7 @@ export default {
           })
     },
     excelDownload(){
+      this.logining=true;
       require.ensure([], () => {
         const { export_json_to_excel } = require('../../vendor/Export2Excel');
         const tHeader = ['日期', '姓名', '地址'];
@@ -79,6 +81,8 @@ export default {
         const list = this.dataTable;
         const data = this.formatJson(filterVal, list);
         export_json_to_excel(tHeader, data, '列表excel');
+        debugger
+        this.logining=false;
       })
     },
     formatJson(filterVal, jsonData) {
