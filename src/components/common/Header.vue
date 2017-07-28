@@ -81,7 +81,8 @@
 .header{
   font-size: 24px;
   height: 50px;
-  background-color: #3A71A8;
+  background-color: #2b83f9;
+  background-image: linear-gradient(143deg,#1D8CE0 20%,#20A0FF 51%,#58B7FF);
   .title{
     line-height: 50px;
     margin-left: 20px;
@@ -89,11 +90,11 @@
       color:#fff;
     }
     .s-name{
-      color:red;
+      color:#58B7FF;
     }
   }
   .i-size{
-    font-size: 20px;
+    font-size: 17px;
     color: #fff;
   }
 }

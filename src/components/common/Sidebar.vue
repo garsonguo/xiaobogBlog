@@ -4,7 +4,7 @@
     <el-radio-button :label="false">展开</el-radio-button>
     <el-radio-button :label="true">收起</el-radio-button>
   </el-radio-group> -->
-  <el-menu :default-active="onRoutes" class="el-menu-vertical-demo" theme="dark" unique-opened router @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+  <el-menu :default-active="onRoutes" class="el-menu-vertical-demo" unique-opened router @open="handleOpen" @close="handleClose" :collapse="isCollapse">
     <el-menu-item index="HomePage"><i class="el-icon-menu"></i>主页</el-menu-item>
     <el-submenu index="2">
       <template slot="title"><i class="el-icon-star-on"></i>组件</template>
@@ -70,8 +70,22 @@ export default {
   left: 0;
   top: 50px;
   bottom: 0;
-  background-color: #324157;
+  background-color: #fff;
   width: 200px;
+  border-right: 1px solid #ddd;
+}
+.el-menu{
+  background-color: #fff;
+}
+.el-submenu__title{
+  font-weight: bold;
+}
+.el-menu-item{
+  background-color: #fff;
+}
+.el-menu-item, .el-submenu__title{
+  height: 46px;
+  line-height: 46px;
 }
 </style>
 
