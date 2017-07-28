@@ -3,6 +3,7 @@
     <el-row>
       <el-col :span="20">
         <div class="title">
+          <img class="logo" width="30px" height="30px" src="../../../static/img/logo.png" alt="logo">
           <span class="name">{{name}}</span><span class="s-name">Admin</span>
         </div>
       </el-col>
@@ -86,8 +87,13 @@
   .title{
     line-height: 50px;
     margin-left: 20px;
+    .logo{
+      position: absolute;
+      top:10px;
+    }
     .name{
       color:#fff;
+      margin-left: 35px;
     }
     .s-name{
       color:#58B7FF;
