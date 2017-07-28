@@ -79,11 +79,13 @@ export default {
 }
 .el-submenu__title{
   font-weight: bold;
+  height: 46px;
+  line-height: 46px;
 }
 .el-menu-item{
   background-color: #fff;
 }
-.el-menu-item, .el-submenu__title{
+.el-menu-item{
   height: 46px;
   line-height: 46px;
 }

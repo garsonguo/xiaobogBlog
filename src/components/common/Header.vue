@@ -94,7 +94,7 @@
     }
   }
   .i-size{
-    font-size: 17px;
+    font-size: 16px;
     color: #fff;
   }
 }
